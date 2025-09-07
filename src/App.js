@@ -27,8 +27,10 @@ function App() {
 const searchlatlong = useCallback(async (useLat, useLong) => {
   if (!useLat || !useLong) return;
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${useLat}&lon=${useLong}&units=metric&appid=4634e3aa0816e6fd4c9eed2295994d92`;
-  const urll = `https://api.openweathermap.org/data/2.5/forecast?lat=${useLat}&lon=${useLong}&units=metric&appid=4634e3aa0816e6fd4c9eed2295994d92`;
+
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${useLat}&lon=${useLong}&units=metric&appid=${API_KEY}`;
+  const urll = `https://api.openweathermap.org/data/2.5/forecast?lat=${useLat}&lon=${useLong}&units=metric&appid=${API_KEY}`;
 
   function formatForecastWeather(secs, offset, data) {
     const hourly = data.filter(f => f.dt > secs).map(f => ({
