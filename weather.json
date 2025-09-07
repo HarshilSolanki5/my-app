@@ -1,0 +1,37 @@
+{
+  "coord": { "lon": 72.8402, "lat": 19.1828 },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 300.07,
+    "feels_like": 304.06,
+    "temp_min": 300.07,
+    "temp_max": 302.11,
+    "pressure": 1002,
+    "humidity": 94,
+    "sea_level": 1002,
+    "grnd_level": 1000
+  },
+  "visibility": 1500,
+  "wind": { "speed": 2.06, "deg": 20 },
+  "clouds": { "all": 100 },
+  "dt": 1720428059,
+  "sys": {
+    "type": 1,
+    "id": 9068,
+    "country": "IN",
+    "sunrise": 1720398997,
+    "sunset": 1720446626
+  },
+  "timezone": 19800,
+  "id": 1275248,
+  "name": "Borivali",
+  "cod": 200
+}
