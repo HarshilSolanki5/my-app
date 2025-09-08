@@ -9,7 +9,7 @@ if(data){
         <p className="font-medium uppercase text-white">{title}</p>
       </div>
       <hr className='my-1'></hr>
-      <div className="flex justify-between items-center">
+      <div className="flex flex-wrap justify-center sm:justify-between items-center gap-4">
         {data.map((d, index)=> (
             <div 
             key = {index}

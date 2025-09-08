@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.app{
-  height: 820px;
+.app {
+  min-height: 100vh; /* instead of fixed 820px */
 }

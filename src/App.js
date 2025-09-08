@@ -100,9 +100,9 @@ function formatBack(){
 
 }
   return (
-  <div className={`app mx-auto max-w-screen-lg my-4 py-5 px-11 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBack()}`}>
+  <div className={`app mx-auto max-w-screen-lg my-4 py-5 px-4 sm:px-8 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBack()}`}>
     <div className="top">
-      <div className="search flex items-center justify-around my-6 ">
+      <div className="search flex flex-col lg:flex-row items-center lg:justify-evenly gap-3 lg:gap-6 my-6 w-full">
         <input
           className="lat px-3 py-2 text-lg font-medium rounded-md shadow-xl capitalize focus:outline-none"
           placeholder="Enter Latitude"
@@ -132,7 +132,7 @@ function formatBack(){
     <div className="flex items-center justify-center mt-4">
       <div className="location text-lg font-light text-white uppercase"><h1>{data.name}</h1></div>
     </div>
-    <div className="bottom items-center flex justify-around my-12">
+    <div className="bottom flex flex-col sm:flex-row items-center justify-around gap-4 sm:gap-8 my-12">
       <div className="humidity font-medium text-white items-center">{data.main ? <h2><WiHumidity size={22}/>{data.main.humidity}%</h2> : null}</div>
       <div className="main text-lg font-medium text-white">{data.weather ? <h2>{data.weather[0].main}</h2> : null}</div>
       <div className="feellike font-medium text-white items-center">{data.main ? <h2><FaThermometerEmpty size={18}/>{data.main.feels_like.toFixed()}°</h2> : null}</div>
